@@ -20,6 +20,7 @@ function WeatherApp() {
         },
         Country: "PK",
     });
+   
  const updateInfo =(newResults)=>{
      setWeatherInfo(newResults);
  }
