@@ -6,7 +6,7 @@ function WeatherApp() {
     let [weatherInfo, setWeatherInfo] = useState({
         FeelsLike: "321.35",
         City: "ccw",
-        Temp: "316.15",
+        Temp: "14",
         Humidity: "28",
         TempMax: "316.15",
         TempMin: "316.15",

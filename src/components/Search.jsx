@@ -8,7 +8,7 @@ function Search({updateInfo}) {
 
     const API_KEY = "16c31d894b347004ea48ab0a058e225c";
     const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-
+   
     const genrateWeatherInfo = async ()=>{
         try{
         let reponse = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
