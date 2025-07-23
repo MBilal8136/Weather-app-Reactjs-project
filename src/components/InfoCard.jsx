@@ -6,6 +6,8 @@ import CardActionArea from '@mui/material/CardActionArea';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import SunnyIcon from '@mui/icons-material/Sunny';
 import CloudySnowingIcon from '@mui/icons-material/CloudySnowing';
+import PropTypes from 'prop-types';
+
 function InfoCard({ info }) {
 
     const Hot_Url = "https://media.istockphoto.com/id/998390080/photo/lavender-field-at-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=b4BJWKaI-_0Gt5sHyyPVyZGH6w9P_dye0VdNYqUjJGY=";
@@ -43,5 +45,8 @@ function InfoCard({ info }) {
   </Card>
   )
 }
+  InfoCard.propTypes= {
+     info: PropTypes.func.isRequired
 
+}
 export default InfoCard

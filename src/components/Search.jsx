@@ -1,8 +1,9 @@
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-function Search({updateInfo}) {
+function Search({ updateInfo }) {
     const [city, setCity] = useState('');
     const [error, setError] = useState(false);
 
@@ -64,5 +65,9 @@ function Search({updateInfo}) {
     </div>
   )
 }
+
+Search.propTypes = {
+  updateInfo: PropTypes.func.isRequired,
+};
 
 export default Search
